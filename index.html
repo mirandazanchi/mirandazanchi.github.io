@@ -28,6 +28,25 @@
 			footer {
 				margin-top: auto;
 			}
+			.card {
+				box-shadow: 5px -5px 5px 0px #bcbcbc;
+			}
+			.carousel-control-prev,
+			.carousel-control-next {
+				background-color: #e1e1e1;
+				width: 5vh;
+				height: 5vh;
+				border-radius: 50%;
+				top: 25%;
+				transform: translateY(-50%);
+			}
+			.btn-primary,
+			.btn-primary:hover,
+			.btn-primary:active,
+			.btn-primary:visited {
+				background-color: #732e99 !important;
+				border-color: #732e99 !important;
+			}
 		</style>
 	</head>
 	<body>
@@ -43,7 +62,7 @@
 							xmlns="http://www.w3.org/2000/svg"
 							width="16"
 							height="16"
-							fill="currentColor"
+							fill="#ffffff"
 							class="bi bi-github"
 							viewBox="0 0 16 16">
 							<path
@@ -60,9 +79,10 @@
 						<div>
 							<h3>Web Apps</h3>
 							<div
-								id="carouselExampleControls"
+								id="carouselWebApps"
 								class="carousel"
-								data-bs-interval="false">
+								data-bs-interval="false"
+								style="width: 18rem">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
 										<div class="card" style="width: 18rem">
@@ -86,7 +106,7 @@
 														xmlns="http://www.w3.org/2000/svg"
 														width="16"
 														height="16"
-														fill="currentColor"
+														fill="#732e99"
 														class="bi bi-github"
 														viewBox="0 0 16 16">
 														<path
@@ -100,7 +120,7 @@
 								<button
 									class="carousel-control-prev"
 									type="button"
-									data-bs-target="#carouselExampleControls"
+									data-bs-target="#carouselWebApps"
 									data-bs-slide="prev">
 									<span
 										class="carousel-control-prev-icon"
@@ -110,7 +130,7 @@
 								<button
 									class="carousel-control-next"
 									type="button"
-									data-bs-target="#carouselExampleControls"
+									data-bs-target="#carouselWebApps"
 									data-bs-slide="next">
 									<span
 										class="carousel-control-next-icon"
@@ -124,9 +144,10 @@
 						<div>
 							<h3>Mods</h3>
 							<div
-								id="carouselExampleControls"
+								id="carouselMods"
 								class="carousel"
-								data-interval="false">
+								data-interval="false"
+								style="width: 18rem">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
 										<div class="card" style="width: 18rem">
@@ -140,7 +161,7 @@
 													The Elder Scrolls IV: Oblivion
 												</h6>
 												<p class="card-text">
-													This mod adds a fast travel location to the user's
+													This mod adds a fast travel location to the player's
 													home in New Sheoth.
 												</p>
 												<a
@@ -153,7 +174,43 @@
 														xmlns="http://www.w3.org/2000/svg"
 														width="16"
 														height="16"
-														fill="currentColor"
+														fill="#732e99"
+														class="bi bi-github"
+														viewBox="0 0 16 16">
+														<path
+															d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="card" style="width: 18rem">
+											<img
+												src="spa shortcut card.png"
+												class="card-img-top"
+												alt="The spa from Stardew Valley, with the title 'Spa Shortcut' imposed." />
+											<div class="card-body">
+												<h5 class="card-title">Spa Shortcut</h5>
+												<h6 class="card-subtitle mb-2 text-muted">
+													Stardew Valley
+												</h6>
+												<p class="card-text">
+													This mod creates a shortcut for the player to go
+													directly between the railroad area and the pool room
+													of the spa.
+												</p>
+												<a
+													href="https://www.nexusmods.com/stardewvalley/mods/28533"
+													class="btn btn-primary"
+													>View on Nexus</a
+												>
+												<a href="https://github.com/mirandazanchi/spashortcut">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#732e99"
 														class="bi bi-github"
 														viewBox="0 0 16 16">
 														<path
@@ -167,7 +224,7 @@
 								<button
 									class="carousel-control-prev"
 									type="button"
-									data-bs-target="#carouselExampleControls"
+									data-bs-target="#carouselMods"
 									data-bs-slide="prev">
 									<span
 										class="carousel-control-prev-icon"
@@ -177,7 +234,7 @@
 								<button
 									class="carousel-control-next"
 									type="button"
-									data-bs-target="#carouselExampleControls"
+									data-bs-target="#carouselMods"
 									data-bs-slide="next">
 									<span
 										class="carousel-control-next-icon"
